@@ -1,0 +1,48 @@
+/*estilos relacionados ao header*/
+
+header .link-logo {
+  display: block;
+  padding: 20px 25px;
+  /*usando aqui o shorthand com 2 valores (20px) é aplicado em
+ cima e embaixo, (25px) é aplicado nas laterais*/
+  border-bottom: 1px solid #25cbd3;
+}
+
+header nav ul {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li:not(:last-child) {
+  /*Esse not é a negação ou seja, não aplicar nesse elemento que vem antes.
+  nesse caso esta dizendo que nao deve aplicar no ultimo item da lista o li*/
+  margin-right: 15px;
+}
+
+.menu li a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #3bd42d;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    position: absolute;
+    right: 2%;
+    top: 18%;
+  }
+}

@@ -1,0 +1,74 @@
+/*estilos relacionados a pagina devstars*/
+
+main h2 {
+  color: rgb(255, 255, 255);
+}
+
+main section p {
+  font-size: 1.3em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comentarios {
+  margin: 15px 0px 80px;
+}
+
+section h3 {
+  margin: 80px 20px;
+  font-size: 1.5em;
+}
+
+section iframe {
+  width: 90%;
+  border: 1px solid #25cbd3;
+}
+
+@media screen and (min-width: 992px) {
+  .pontos {
+    width: 50%;
+    margin: auto;
+  }
+
+  .comentarios {
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  iframe {
+    width: 55%;
+    border: 2px solid #25cbd3;
+    border-radius: 15px;
+  }
+}
+table {
+  border: 1px solid aquamarine;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+table,
+th,
+tr {
+  border-collapse: collapse;
+}
+
+th {
+  color: #6bd872;
+  border-right: 1px solid #25cbd3;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(14, 42, 65);
+  opacity: 0.9;
+}
+
+td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #25cbd3;
+}

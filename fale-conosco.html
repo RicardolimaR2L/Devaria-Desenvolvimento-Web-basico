@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/devaria.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/faleConosco.css" />
+
+    <title>Fale Conosco</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="link-logo">
+        <img src="imagens/logo-devaria.svg" alt="logo da Devaria" />
+      </a>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="Professores.html"> Professores</a>
+          </li>
+          <li>
+            <a href="fale-conosco.html">Fale conosco</a>
+          </li>
+          <li>
+            <a href="devstars.html">Devstars</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title text-center">Fale com a Devaria através dessa página</h1>
+      <h2 class="sub-title text-center">
+        para entrar em contato preencha os campos abaixo e clique em enviar
+      </h2>
+      <section>
+        <form
+          action="/SITE DEVARIA/INDEX.HTML"
+          class="contact-form margin-horizontal-20px"
+        >
+          <!--action é o direcionamento para a pagina principal após os dados serem preenchidos pelo usuário--->
+          <div>
+            <label> Nome:</label>
+            <input type="text" name="nome" maxlength="50" />
+          </div>
+
+          <div>
+            <label>Email:</label>
+            <input type="text" name="email" maxlength="150" />
+          </div>
+          <div>
+            <label>Comentários:</label><br />
+            <textarea
+              name="comentário"
+              cols="50"
+              rows="4"
+              maxlength="200"
+            ></textarea>
+          </div>
+          <div>
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" /><span> Masculino</span>
+            <input type="radio" name="sexo" /><span> Feminino</span>
+            <!--input radio serve pra fazer a marcação de opções. o name do input tem que ser o mesmo em todas as opções, senão não irá funcionar  as marcações-->
+          </div>
+          <div>
+            <label> Aonde você nos conheceu?</label>
+            <select name="conheceu">
+              <option selected>Youtube</option>
+              <!--o "selected" em uma das opções define qual opção do grupo vai aparecer inicialmente para usuário, vai apartir dela que o usuario vai poder escolher--->
+              <option>Google</option>
+              <option>Amigos</option>
+              <option>Outros</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" name="aceite" value="aceite" />
+            <span> Aceito receber novidades da Devaria</span>
+          </div>
+          <div>
+            <input type="submit" name="Enviar" value="Enviar" />
+            <input type="reset" name="limpar" value="limpar" />
+            <!--input type submit & reset dentro do form funcionam como um botão e o campo value é o nome do botao ou seja o que vai aparecer para usuário. se deixarmos o value vazio nada aparece escrito no botão-->
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <span> contato@devaria.com.br</span><br />
+        <span> Conheça nosso canal do Youtube!</span>
+      </section>
+    </footer>
+  </body>
+</html>
